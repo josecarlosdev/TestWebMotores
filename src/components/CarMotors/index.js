@@ -7,10 +7,8 @@ const CarMotors = () => {
         <div>
             <div className="row">
                 <div className="column">
-                    
                     <div className="card">
-                      <table>
-                          
+                      <table>   
                           <tr>
                               <td>
                                  <img className="" src={Car} width="120" height="120" />
@@ -18,7 +16,7 @@ const CarMotors = () => {
                               </td>
                                 COMPRAR
                                 
-                              <td className="car"><a href="" className="a">Carros</a></td>
+                              <td className="car"><a className="a">Carros</a></td>
                               
                           </tr>
                       </table>
@@ -34,14 +32,14 @@ const CarMotors = () => {
                                     
                               </td>
                                 COMPRAR
-                              <td className="car" ><a href="" className="a">MOTOS</a></td>
+                              <td className="car" ><a className="a">MOTOS</a></td>
                           </tr>
                       </table>
                     </div>
                 </div>
                 
             </div>
-            <button className="button-vender">Vender meu carro.</button>
+            <button className="button-vender">Vender meu carro</button>
         
         </div>
 

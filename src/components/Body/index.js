@@ -154,11 +154,11 @@ const Body = () => {
                     </select>
                     <select className="inputGeneric2" >
                         <option>Faixa de Preço</option>
-                        <option>2021</option>
-                        <option>2019</option>
-                        <option>2018</option>
-                        <option>2017</option>
-                        <option>2016</option>
+                        <option>R$ 15.000</option>
+                        <option>R$ 30.000</option>
+                        <option>R$ 45.000</option>
+                        <option>R$ 60.000</option>
+                        <option>R$ 75.000</option>
                     </select>
                     <select className="versao">
                         <option> Versão: Todos</option>
@@ -173,9 +173,12 @@ const Body = () => {
                 </div>
             </div>
 
+            
+
             <div className="menu-opcoes">
                 {vehicles.map(vehicless => (
                     <ul>
+                        <label>{vehicless.Make}</label>
                         <img src={vehicless.Image} width="320" height="200" />
                     </ul>
 

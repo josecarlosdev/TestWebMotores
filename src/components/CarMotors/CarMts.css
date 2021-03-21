@@ -26,32 +26,39 @@
   
 
   .card {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2); 
+    
     padding: 16px;
     text-align: left;
     background-color:  rgba(239, 245, 250, 0.747);
+    position: relative;
   }
-  .car{
-    color: white;
-    font-size: 50px;
-  }
-  .a{
-    color: rgba(48, 45, 45, 0.253);
-  }
-.test{
-  align-items: center;
-}
-a:hover {
-  color: rgb(231, 0, 39);
-}
-a:link {
-  color: green;
-  text-decoration: none;
+  .card::after,
+.card::before{
+  content: "";
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
 }
 
-/*Link ativo/selecionado*/
-a:active {
-  color: rgb(255, 0, 0);
-  text-decoration: none;
+
+  .card:after{
+    border-top: 2px solid red;
+    border-bottom: 2px solid  red;
+    transform: scaleX(0);
+  }
+
+
+.card:hover::after{
+  transform: scaleY(1);
+  
 }
+
+.a{
+  font-size: 60px;
+  color: red;
+}
+ 
   
